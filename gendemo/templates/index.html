@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-wrapper">
+  <form method="post" action="tag" enctype="multipart/form-data">
+    <div>
+      <textarea id="input-text" rows="5" name="text" placeholder="Type here"></textarea>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary" id="submit_button">Submit</button>
+    </div>
+  </form>
+</div>
+{% endblock %}
