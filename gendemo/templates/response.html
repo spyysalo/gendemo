@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="form-wrapper">
+  <form method="post" action="generate" enctype="multipart/form-data">
+    <div>
+      <textarea id="input-text" rows="5" name="text" value="{{prompt}}"></textarea>
+    </div>
+    <div>
+      Max length: <input type="text" size="3" name="max_length" value="{{max_length}}">
+      Temperature: <input type="text" size="3" name="temperature" value="{{temperature}}">
+      <button type="submit" class="btn btn-primary" id="submit_button">Submit</button>
+    </div>
+  </form>
+</div>
+<hr/>
+<div class="response-wrapper">
+<b>{{prompt|safe}}</b>{{response|safe}}
+</div>
+{% endblock %}
