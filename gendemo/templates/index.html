@@ -2,11 +2,13 @@
 
 {% block content %}
 <div class="form-wrapper">
-  <form method="post" action="tag" enctype="multipart/form-data">
+  <form method="post" action="generate" enctype="multipart/form-data">
     <div>
       <textarea id="input-text" rows="5" name="text" placeholder="Type here"></textarea>
     </div>
     <div>
+      Max length: <input type="text" size="3" name="max_length" value="128">
+      Temperature: <input type="text" size="3" name="temperature" value="0.9">
       <button type="submit" class="btn btn-primary" id="submit_button">Submit</button>
     </div>
   </form>

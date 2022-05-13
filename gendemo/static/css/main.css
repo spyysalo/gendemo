@@ -67,6 +67,7 @@ ul.document-listing {
 
 div.form-wrapper {
     width: 800px;
+    margin-bottom: 50px;
 }
 
 #input-text {
@@ -75,4 +76,8 @@ div.form-wrapper {
 
 #submit_button {
     float: right;
+}
+
+#response-wrapper {
+    white-space: pre-wrap;
 }
